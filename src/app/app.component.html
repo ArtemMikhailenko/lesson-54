@@ -1,0 +1,10 @@
+<main>
+  
+  <app-post
+  *ngFor="let post of posts| filter:'name'"
+  [name]="post.name" 
+  [status]="post.status"
+  [url]="post.url"
+  ></app-post>
+
+</main>
